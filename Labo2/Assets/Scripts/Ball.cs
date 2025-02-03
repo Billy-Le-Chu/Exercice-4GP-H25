@@ -27,10 +27,10 @@ public class Ball : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            _rb.AddForce(speed * new Vector3(0, 0, -1), ForceMode.Impulse);
+            _rb.AddForce(speed * new Vector3(0, 0, 1), ForceMode.Impulse);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) { _rb.AddForce(speed * new Vector3(0, 0, 1), ForceMode.Impulse); }
+        if (Input.GetKeyDown(KeyCode.LeftArrow)) { _rb.AddForce(speed * new Vector3(0, 0, -1), ForceMode.Impulse); }
 
         if (Input.GetKeyDown(KeyCode.UpArrow)) { _rb.AddForce(speed * new Vector3(-1, 0, 0), ForceMode.Impulse); }
 
